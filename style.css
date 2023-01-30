@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --fs-outfit: 'Outfit', sans-serif;
+    --bg-main-color: hsl(217, 54%, 11%);
+    --bg-card-color: hsl(216, 50%, 16%);
+    --fc-softblue: hsl(215, 51%, 70%);
+    --fc-cyan: hsl(178, 100%, 50%);
+}
+
+body{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--bg-main-color);
+}
+
+.card{
+    background-color: var(--bg-card-color);
+    width: 350px;
+    border-radius: 10px;
+}
+
+.card-image img{
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 6%;
+}
+
+.card-content{
+    font-family: var(--fs-outfit);
+}
+
+.card-content h1{
+    padding-left: 20px;
+    color: white;
+    font-size: 24px;
+}
+
+.card-content p{
+    font-size: 18px;
+    padding-top: 20px;
+    padding-left: 20px;
+    color: var(--fc-softblue);
+}
+
+.price{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+
+.price .eth{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+
+.price .clock{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+
+hr{
+    margin: 20px 20px 0px 20px;
+    border: 1px solid var(--fc-softblue);
+}
+
+.profile{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.profile .name{
+    font-size: 14px;
+    margin-left: -10px;
+}
+
+.profile img{
+    height: 30px;
+    width: 30px;
+    margin-top: 20px;
+}
